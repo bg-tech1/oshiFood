@@ -45,7 +45,7 @@ export const NavBar = ({ items }: NavBarProps) => {
           </li>
         </ul>
       </div>
-      <div className="md:hidden bg-blue-500 h-15 w-full flex items-center">
+      <div className="md:hidden bg-primary h-15 w-full flex items-center">
         <button
           onClick={toggleMenu}
           className="text-white p-2 rounded cursor-pointer focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -91,7 +91,7 @@ export const NavBar = ({ items }: NavBarProps) => {
       {isMenuOpen && (
         <div
           id="menu-panel"
-          className="md:hidden border-t border-white absolute top-full left-0 right-0 bg-blue-500 z-50 shadow-lg"
+          className="md:hidden border-t border-white absolute top-full left-0 right-0 bg-primary z-50 shadow-lg"
         >
           <ul className="flex flex-col items-stretch text-center py-2">
             {items.map((item, index) => (
